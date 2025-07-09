@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学术论文阅读记录 | Learning Record</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="logo">
+                    <a href="index.html">📚 学术论文记录</a>
+                </h1>
+                <ul class="nav-links">
+                    <li><a href="#recent-papers">最新论文</a></li>
+                    <li><a href="#categories">分类浏览</a></li>
+                    <li><a href="#notes">学习笔记</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- 欢迎区域 -->
+            <section class="welcome-section">
+                <h2>欢迎来到我的学术论文阅读记录</h2>
+                <p class="welcome-description">
+                    这里记录了我在学术研究过程中阅读的重要论文、学习笔记和相关代码实现。
+                    主要关注计算机视觉、机器学习和人工智能领域的前沿研究。
+                </p>
+            </section>
+
+            <!-- 统计信息 -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>📄</h3>
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">已阅读论文</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>📝</h3>
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">学习笔记</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>💻</h3>
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">代码实现</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>🏷️</h3>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">研究方向</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 最新论文 -->
+            <section id="recent-papers" class="papers-section">
+                <h2>🔥 最新阅读论文</h2>
+                
+                <div class="category-section">
+                    <h3 id="vision-language-models">🤖 视觉语言模型</h3>
+                    <div class="papers-list">
+                        <article class="paper-card">
+                            <div class="paper-header">
+                                <span class="paper-year">2024</span>
+                                <span class="paper-venue">arXiv</span>
+                                <span class="paper-status new">New</span>
+                            </div>
+                            <h4 class="paper-title">Boosting Vision-Language Models with Transduction</h4>
+                            <p class="paper-description">
+                                提出基于统计适应的转导推理方法，在11个跨模态基准测试中平均提升8.7%准确率。
+                                该方法通过转导学习显著改善了视觉语言模型在零样本场景下的表现。
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2406.01837" target="_blank" class="link-button paper-link">
+                                    📄 论文
+                                </a>
+                                <a href="https://github.com/MaxZanella/transduction-for-vlms" target="_blank" class="link-button code-link">
+                                    💻 代码
+                                </a>
+                                <a href="notes/transduction-vlm-notes.pdf" class="link-button notes-link">
+                                    📝 笔记
+                                </a>
+                            </div>
+                            <div class="paper-tags">
+                                <span class="tag">视觉语言模型</span>
+                                <span class="tag">转导学习</span>
+                                <span class="tag">零样本学习</span>
+                            </div>
+                        </article>
+
+                        <article class="paper-card">
+                            <div class="paper-header">
+                                <span class="paper-year">2024</span>
+                                <span class="paper-venue">arXiv</span>
+                            </div>
+                            <h4 class="paper-title">Enhancing Remote Sensing Vision-Language Models for Zero-Shot Scene Classification</h4>
+                            <p class="paper-description">
+                                将转导推理应用在针对遥感图像的零样本场景分类任务中，提出了专门针对遥感数据特点的优化方法。
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2409.00698" target="_blank" class="link-button paper-link">
+                                    📄 论文
+                                </a>
+                                <a href="https://github.com/elkhouryk/RS-TransCLIP" target="_blank" class="link-button code-link">
+                                    💻 代码
+                                </a>
+                                <a href="notes/remote-sensing-vlm-notes.pdf" class="link-button notes-link">
+                                    📝 笔记
+                                </a>
+                            </div>
+                            <div class="paper-tags">
+                                <span class="tag">遥感图像</span>
+                                <span class="tag">场景分类</span>
+                                <span class="tag">零样本学习</span>
+                            </div>
+                        </article>
+
+                        <article class="paper-card">
+                            <div class="paper-header">
+                                <span class="paper-year">2024</span>
+                                <span class="paper-venue">arXiv</span>
+                            </div>
+                            <h4 class="paper-title">Boosting Vision-Language Models for Histopathology Classification</h4>
+                            <p class="paper-description">
+                                在医疗病理学图像分析领域应用视觉语言模型，提出了针对医疗图像特点的模型优化策略。
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2409.01883" target="_blank" class="link-button paper-link">
+                                    📄 论文
+                                </a>
+                                <a href="https://github.com/FereshteShakeri/Histo-TransCLIP" target="_blank" class="link-button code-link">
+                                    💻 代码
+                                </a>
+                                <a href="notes/histopathology-vlm-notes.pdf" class="link-button notes-link">
+                                    📝 笔记
+                                </a>
+                            </div>
+                            <div class="paper-tags">
+                                <span class="tag">医疗AI</span>
+                                <span class="tag">病理学</span>
+                                <span class="tag">图像分类</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3 id="computer-vision">👁️ 计算机视觉</h3>
+                    <div class="papers-list">
+                        <article class="paper-card">
+                            <div class="paper-header">
+                                <span class="paper-year">2025</span>
+                                <span class="paper-venue">CVPR</span>
+                                <span class="paper-status accepted">Accepted</span>
+                            </div>
+                            <h4 class="paper-title">SegEarth-OV: Training-Free Open-Vocabulary Segmentation for Remote Sensing</h4>
+                            <p class="paper-description">
+                                针对遥感图像的开放词汇语义分割方法，无需训练即可处理任意类别的分割任务。
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/pdf/2410.01768" target="_blank" class="link-button paper-link">
+                                    📄 论文
+                                </a>
+                                <a href="notes/segearth-ov-notes.pdf" class="link-button notes-link">
+                                    📝 笔记
+                                </a>
+                            </div>
+                            <div class="paper-tags">
+                                <span class="tag">语义分割</span>
+                                <span class="tag">遥感</span>
+                                <span class="tag">开放词汇</span>
+                            </div>
+                        </article>
+
+                        <article class="paper-card">
+                            <div class="paper-header">
+                                <span class="paper-year">2025</span>
+                                <span class="paper-venue">CVPR</span>
+                            </div>
+                            <h4 class="paper-title">Interpretable Zero-Shot Learning with Locally-Aligned Vision-Language Model</h4>
+                            <p class="paper-description">
+                                提出了可解释的零样本学习方法，通过局部对齐的视觉语言模型实现更好的可解释性。
+                            </p>
+                            <div class="paper-links">
+                                <a href="https://arxiv.org/abs/2506.23822" target="_blank" class="link-button paper-link">
+                                    📄 论文
+                                </a>
+                                <a href="https://github.com/shiming-chen/LaZSL" target="_blank" class="link-button code-link">
+                                    💻 代码
+                                </a>
+                                <a href="notes/interpretable-zsl-notes.pdf" class="link-button notes-link">
+                                    📝 笔记
+                                </a>
+                            </div>
+                            <div class="paper-tags">
+                                <span class="tag">零样本学习</span>
+                                <span class="tag">可解释性</span>
+                                <span class="tag">视觉语言模型</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 分类浏览 -->
+            <section id="categories" class="categories-section">
+                <h2>🏷️ 按主题分类</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>🤖 视觉语言模型</h3>
+                        <p>CLIP、ALIGN等多模态模型研究</p>
+                        <span class="paper-count">8 篇论文</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>🎯 零样本学习</h3>
+                        <p>无监督学习和少样本学习方法</p>
+                        <span class="paper-count">6 篇论文</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>🛰️ 遥感图像</h3>
+                        <p>卫星图像分析和处理技术</p>
+                        <span class="paper-count">5 篇论文</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>🏥 医疗AI</h3>
+                        <p>医学图像分析和诊断辅助</p>
+                        <span class="paper-count">4 篇论文</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>🧠 深度学习</h3>
+                        <p>神经网络架构和优化方法</p>
+                        <span class="paper-count">7 篇论文</span>
+                    </div>
+                    <div class="category-card">
+                        <h3>🔍 语义分割</h3>
+                        <p>图像分割和场景解析技术</p>
+                        <span class="paper-count">3 篇论文</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 学习笔记 -->
+            <section id="notes" class="notes-section">
+                <h2>📝 学习笔记</h2>
+                <div class="notes-container">
+                    <div class="notes-dropdown-container">
+                        <button class="notes-toggle-btn" onclick="toggleNotesDropdown()">
+                            浏览所有笔记 ▼
+                        </button>
+                        <div class="notes-dropdown" id="notesDropdown">
+                            <a href="notes/vision-language-models-overview.pdf" target="_blank">视觉语言模型综述</a>
+                            <a href="notes/zero-shot-learning-methods.pdf" target="_blank">零样本学习方法总结</a>
+                            <a href="notes/remote-sensing-applications.pdf" target="_blank">遥感应用案例分析</a>
+                            <a href="notes/medical-ai-trends.pdf" target="_blank">医疗AI发展趋势</a>
+                            <a href="notes/deep-learning-architectures.pdf" target="_blank">深度学习架构对比</a>
+                            <a href="notes/semantic-segmentation-review.pdf" target="_blank">语义分割技术回顾</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recent-notes">
+                        <h3>最近更新的笔记</h3>
+                        <div class="notes-list">
+                            <div class="note-item">
+                                <span class="note-date">2024-07-08</span>
+                                <a href="notes/transduction-vlm-notes.pdf" target="_blank">转导推理在视觉语言模型中的应用</a>
+                            </div>
+                            <div class="note-item">
+                                <span class="note-date">2024-07-05</span>
+                                <a href="notes/remote-sensing-vlm-notes.pdf" target="_blank">遥感图像零样本分类方法研究</a>
+                            </div>
+                            <div class="note-item">
+                                <span class="note-date">2024-07-02</span>
+                                <a href="notes/histopathology-vlm-notes.pdf" target="_blank">医疗病理图像AI分析技术</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 学术论文阅读记录. 持续学习，永不止步。</p>
+            <p>
+                <a href="https://github.com" target="_blank">GitHub</a> | 
+                <a href="mailto:your.email@example.com">联系我</a> |
+                <a href="#top">回到顶部</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
