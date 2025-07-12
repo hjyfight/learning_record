@@ -3,61 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>学术论文阅读记录 | Learning Record</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专业的学术论文阅读记录平台，专注于计算机视觉、机器学习和人工智能领域的前沿研究文献整理与分析">
+    <meta name="keywords" content="学术论文,计算机视觉,机器学习,人工智能,研究记录,文献综述">
+    <meta name="author" content="Academic Research">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="学术论文阅读记录 | Academic Research Portal">
+    <meta property="og:description" content="专业的学术论文阅读记录平台，专注于AI领域前沿研究">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/og-image.jpg">
+    
+    <title>学术论文阅读记录 | Academic Research Portal</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
-            <nav class="nav">
+            <nav class="nav" role="navigation" aria-label="主导航">
                 <h1 class="logo">
-                    <a href="index.html">📚 学术论文记录</a>
+                    <a href="/" aria-label="返回首页">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                        <span>学术研究中心</span>
+                    </a>
                 </h1>
-                <ul class="nav-links">
-                    <li><a href="#recent-papers">最新论文</a></li>
-                    <li><a href="#categories">分类浏览</a></li>
-                    <li><a href="#notes">学习笔记</a></li>
+                <button class="mobile-menu-toggle" aria-label="打开移动菜单" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#recent-papers" role="menuitem">最新论文</a></li>
+                    <li role="none"><a href="#categories" role="menuitem">分类浏览</a></li>
+                    <li role="none"><a href="#notes" role="menuitem">学习笔记</a></li>
+                    <li role="none"><button class="theme-toggle" aria-label="切换主题模式" role="menuitem">
+                        <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    </button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" role="main">
         <div class="container">
             <!-- 欢迎区域 -->
-            <section class="welcome-section">
-                <h2>欢迎来到我的学术论文阅读记录</h2>
-                <p class="welcome-description">
-                    这里记录了我在学术研究过程中阅读的重要论文、学习笔记和相关代码实现。
-                    主要关注计算机视觉、机器学习和人工智能领域的前沿研究。
-                </p>
+            <section class="welcome-section" aria-labelledby="welcome-title">
+                <div class="welcome-content">
+                    <h2 id="welcome-title" class="welcome-title">
+                        <span class="gradient-text">专业学术研究平台</span>
+                        <span class="subtitle">Academic Research Portal</span>
+                    </h2>
+                    <p class="welcome-description">
+                        汇聚前沿科研成果，专注于<strong>计算机视觉</strong>、<strong>机器学习</strong>和<strong>人工智能</strong>领域的
+                        深度研究与文献分析。为研究者提供专业的论文管理与知识整理平台。
+                    </p>
+                    <div class="welcome-actions">
+                        <a href="#recent-papers" class="cta-button primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                            探索最新研究
+                        </a>
+                        <a href="#categories" class="cta-button secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                            按主题浏览
+                        </a>
+                    </div>
+                </div>
+                <div class="welcome-visual">
+                    <div class="floating-elements">
+                        <div class="floating-card">AI</div>
+                        <div class="floating-card">CV</div>
+                        <div class="floating-card">ML</div>
+                    </div>
+                </div>
             </section>
 
             <!-- 统计信息 -->
-            <section class="stats-section">
+            <section class="stats-section" aria-labelledby="stats-title">
+                <h2 id="stats-title" class="visually-hidden">研究统计数据</h2>
                 <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>📄</h3>
-                        <div class="stat-number">25</div>
+                    <article class="stat-card" data-count="25">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="25">0</div>
                         <div class="stat-label">已阅读论文</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>📝</h3>
-                        <div class="stat-number">12</div>
+                        <div class="stat-description">高质量学术文献</div>
+                    </article>
+                    <article class="stat-card" data-count="12">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="12">0</div>
                         <div class="stat-label">学习笔记</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>💻</h3>
-                        <div class="stat-number">8</div>
+                        <div class="stat-description">深度思考记录</div>
+                    </article>
+                    <article class="stat-card" data-count="8">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="8">0</div>
                         <div class="stat-label">代码实现</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>🏷️</h3>
-                        <div class="stat-number">5</div>
+                        <div class="stat-description">实践验证项目</div>
+                    </article>
+                    <article class="stat-card" data-count="5">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                                <line x1="7" y1="7" x2="7.01" y2="7"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number" data-target="5">0</div>
                         <div class="stat-label">研究方向</div>
-                    </div>
+                        <div class="stat-description">专业领域覆盖</div>
+                    </article>
                 </div>
             </section>
 
@@ -269,18 +361,39 @@
                     <div class="recent-notes">
                         <h3>最近更新的笔记</h3>
                         <div class="notes-list">
-                            <div class="note-item">
-                                <span class="note-date">2024-07-08</span>
-                                <a href="notes/transduction-vlm-notes.pdf" target="_blank">转导推理在视觉语言模型中的应用</a>
-                            </div>
-                            <div class="note-item">
-                                <span class="note-date">2024-07-05</span>
-                                <a href="notes/remote-sensing-vlm-notes.pdf" target="_blank">遥感图像零样本分类方法研究</a>
-                            </div>
-                            <div class="note-item">
-                                <span class="note-date">2024-07-02</span>
-                                <a href="notes/histopathology-vlm-notes.pdf" target="_blank">医疗病理图像AI分析技术</a>
-                            </div>
+                            <article class="note-item">
+                                <time class="note-date" datetime="2024-07-08">2024-07-08</time>
+                                <a href="notes/transduction-vlm-notes.pdf" target="_blank" rel="noopener noreferrer">
+                                    转导推理在视觉语言模型中的应用
+                                    <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </article>
+                            <article class="note-item">
+                                <time class="note-date" datetime="2024-07-05">2024-07-05</time>
+                                <a href="notes/remote-sensing-vlm-notes.pdf" target="_blank" rel="noopener noreferrer">
+                                    遥感图像零样本分类方法研究
+                                    <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </article>
+                            <article class="note-item">
+                                <time class="note-date" datetime="2024-07-02">2024-07-02</time>
+                                <a href="notes/histopathology-vlm-notes.pdf" target="_blank" rel="noopener noreferrer">
+                                    医疗病理图像AI分析技术
+                                    <svg class="external-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15,3 21,3 21,9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -288,17 +401,61 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2024 学术论文阅读记录. 持续学习，永不止步。</p>
-            <p>
-                <a href="https://github.com" target="_blank">GitHub</a> | 
-                <a href="mailto:your.email@example.com">联系我</a> |
-                <a href="#top">回到顶部</a>
-            </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>学术研究中心</h4>
+                    <p>专注于前沿科技研究与学术交流</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#recent-papers">最新论文</a></li>
+                        <li><a href="#categories">分类浏览</a></li>
+                        <li><a href="#notes">学习笔记</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub 主页">GitHub</a></li>
+                        <li><a href="mailto:research@example.com" aria-label="发送邮件">联系邮箱</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 学术研究中心. 致力于推动科研进步与知识分享。</p>
+                <button class="back-to-top" aria-label="回到顶部" onclick="scrollToTop()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="19" x2="12" y2="5"/>
+                        <polyline points="5,12 12,5 19,12"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "学术研究中心",
+        "description": "专业的学术论文阅读记录平台，专注于计算机视觉、机器学习和人工智能领域",
+        "url": "https://example.com",
+        "author": {
+            "@type": "Organization",
+            "name": "Academic Research Center"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://example.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </body>
 </html>
